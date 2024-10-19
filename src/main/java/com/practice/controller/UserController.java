@@ -25,8 +25,8 @@ public class UserController {
 
     @Autowired
     private IUserService iUserService;
-    @GetMapping("/{id}")
-    public Object getUserById(@PathVariable int id) {
+    @GetMapping("/getAllUser")
+    public Object getAllUser() {
         List <User> list=iUserService.list();
         return ResultUtils.returnDataSuccess(list);
     }

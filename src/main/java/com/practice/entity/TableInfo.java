@@ -27,10 +27,9 @@ public class TableInfo implements Serializable {
 
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
-
-    private String tableName;
-
+    private String tableNumber;
     private String qrCodeImage;
-
-
+    private String tableAddress;
+    private String tableType;
+    private String status;
 }
